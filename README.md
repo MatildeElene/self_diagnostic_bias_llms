@@ -59,10 +59,12 @@ This work was made possible thanks to the following open-source resources:
 See also [`metrics/README.md`](metrics/README.md).
 
 # Personal TO DO
-To do: ZUSAMMEN
+__To do: ZUSAMMEN__
 - check up on license 
 - check up on citation
 
-To do: MATILDE
+__To do: MATILDE__
+- add to readme.md files in all directories
+- check up on code + check python version + check up on rstudio version
 
-To do: ROSS
+__To do: ROSS__
