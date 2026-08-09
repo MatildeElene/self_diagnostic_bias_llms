@@ -1,0 +1,449 @@
+---
+title: "plots_LLM_rstudio"
+author: "Matilde 2026"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(gt)
+library(ggplot2)
+library(readr)
+library(stringr)
+```
+
+```{r SETTING THEME}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(gt)
+library(ggplot2)
+library(readr)
+library(stringr)
+
+# ----------------------------
+# Shared palette
+# ----------------------------
+col_male   <- "#c9cba3"  
+col_female <- "#ffe1a8"
+col_proxy  <- "#FC6E51" 
+
+
+col_male_proxy   <- "#F6BD60"  # lighter orange
+col_female_proxy <- "#F28482"  # soft red
+
+# ----------------------------
+# Shared ggplot theme
+# ----------------------------
+theme_paper <- function() {
+  theme_minimal(base_family = "serif") +
+    theme(
+      plot.title = element_text(face = "bold", hjust = 0.5, size = 10),
+      plot.subtitle = element_text(face = "italic", hjust = 0.5, size = 9),
+      axis.title = element_text(size = 9),
+      axis.text = element_text(size = 8.5),
+
+      panel.grid.minor = element_blank(),
+      panel.grid.major.x = element_blank(),
+       panel.grid.major.y = element_line(
+        color = grDevices::adjustcolor("#BDBDBD", alpha.f = 0.2),
+        linewidth = 0.4
+      ),
+      axis.line = element_line(size = 0.1),
+      axis.ticks = element_line(size = 0.6),
+
+      legend.position = "top"
+    )
+}
+
+# ----------------------------
+# Shared gt theme
+# ----------------------------
+theme_gt_paper <- function(gt_obj) {
+  gt_obj %>%
+    tab_options(
+      table.width = pct(70),
+      data_row.padding = px(18),
+      column_labels.padding = px(8),
+      table.border.top.width = px(1),
+      table.border.bottom.width = px(1),
+      heading.border.bottom.width = px(1),
+      column_labels.border.bottom.width = px(1)
+    ) %>%
+    cols_align(
+      align = "center",
+      columns = everything()
+    ) %>%
+    tab_style(
+  style = list(
+    cell_text(weight = "bold"),
+    cell_fill(color = adjustcolor(col_male, alpha.f = 0.2))
+  ),
+      locations = cells_column_labels(everything())
+    ) %>%
+    tab_style(
+      style = cell_text(style = "italic", size = px(16)),
+      locations = cells_title(groups = "subtitle")
+    )
+}
+
+valid_subtypes <- c("ADHD-I", "ADHD-HI", "ADHD-C")
+```
+
+```{r Data upload}
+# ----------------------------
+# Data(hardcoded)
+# ----------------------------
+platania <- tibble::tribble(
+  ~Gender,   ~subtype,          ~n,
+  "Male",    "ADHD-I",          289,
+  "Male",    "ADHD-HI",          12,
+  "Male",    "ADHD-C",          525,
+  "Male",    "other_specifed",    1,
+  "Male",    "unspecified",       2,
+  "Female",  "ADHD-I",          420,
+  "Female",  "ADHD-HI",          32,
+  "Female",  "ADHD-C",          832,
+  "Female",  "other_specifed",   10,
+  "Female",  "unspecified",       6
+)
+
+# psykiatrien <- tibble::tribble(
+#   ~source,       ~subtype,   ~prop,
+#   "Psykiatrien", "ADHD-I",    0.10,
+#   "Psykiatrien", "ADHD-HI",   0.05,
+#   "Psykiatrien", "ADHD-C",    0.85
+# )
+
+platania_clean <- platania %>%
+  filter(subtype %in% valid_subtypes)
+
+# ----------------------------
+# Analysis data
+# ----------------------------
+
+analysis_dir <- "/Users/matildeelene/Desktop/DS_PROJECTS/ADHD_LLM/adhd_llm_code/in/analysis_results"
+
+analysis_files <- list.files(
+  path = analysis_dir,
+  pattern = "analysis_summary\\.csv$",
+  full.names = TRUE
+)
+
+cat_metrics <- analysis_files %>%
+
+  setNames(basename(.)) %>%
+
+  lapply(read_csv, show_col_types = FALSE) %>%
+
+  bind_rows(.id = "source_file") %>%
+
+  mutate(
+
+    Study = case_when(
+
+      str_detect(source_file, "s1|S1") ~ "S1",
+
+      str_detect(source_file, "s2|S2") ~ "S2",
+
+      TRUE ~ NA_character_
+
+    ),
+
+    Condition = case_when(
+
+      str_detect(source_file, "ex_|explicit") ~ "Explicit",
+
+      str_detect(source_file, "im_|implicit") ~ "Implicit",
+
+      TRUE ~ NA_character_
+
+    ),
+
+    `Subtype(s)` = case_when(
+
+      Study == "S1" ~ "ADHD-HI\n& ADHD-I",
+
+      Study == "S2" ~ "ADHD-C",
+
+      TRUE ~ NA_character_
+
+    ),
+
+    Study = factor(Study, levels = c("S1", "S2")),
+
+    Condition = factor(Condition, levels = c("Explicit", "Implicit"))
+
+  ) %>%
+
+  arrange(Study, Condition) %>%
+
+  select(Study, Condition, `Subtype(s)`, LMS_total, MPS_total, BS_total)
+
+```
+
+```{r setting out} 
+# ----------------------------
+# output directories
+# ----------------------------
+table_dir <- "/Users/matildeelene/Desktop/DS_PROJECTS/ADHD_LLM/adhd_llm_code/out/tables"
+figure_dir  <- "/Users/matildeelene/Desktop/DS_PROJECTS/ADHD_LLM/adhd_llm_code/out/figures"
+```
+
+```{r Gender_within_subtype_table} 
+gender_within_subtype <- platania_clean %>%
+  group_by(subtype, Gender) %>%
+  summarise(n = sum(n), .groups = "drop") %>%
+  group_by(subtype) %>%
+  mutate(
+    pct = round(n / sum(n) * 100, 2)
+  ) %>%
+  ungroup() %>%
+  mutate(
+    subtype = factor(subtype, levels = c("ADHD-I", "ADHD-HI", "ADHD-C"))
+  ) %>%
+  arrange(subtype) %>%
+  pivot_wider(
+    names_from  = Gender,
+    values_from = c(n, pct),
+    names_sep   = "_"
+  ) %>%
+  mutate(
+    total   = n_Male + n_Female,
+    subtype = as.character(subtype)
+  )
+
+gender_within_total <- gender_within_subtype %>%
+  bind_rows(
+    gender_within_subtype %>%
+      summarise(
+        subtype    = "Total",
+        n_Male     = sum(n_Male, na.rm = TRUE),
+        n_Female   = sum(n_Female, na.rm = TRUE),
+        pct_Male   = round(n_Male / (n_Male + n_Female) * 100, 2),
+        pct_Female = round(n_Female / (n_Male + n_Female) * 100, 2),
+        total      = sum(total, na.rm = TRUE)
+      )
+  )
+
+gt_gender_table <- gender_within_total %>%
+  gt() %>%
+  cols_label(
+    subtype    = "Subtype",
+    n_Male     = "Males (n)",
+    pct_Male   = "Males (%)",
+    n_Female   = "Females (n)",
+    pct_Female = "Females (%)",
+    total      = "Total (n)"
+  ) %>%
+  fmt_number(
+    columns = c(n_Male, n_Female, total),
+    decimals = 0
+  ) %>%
+  fmt_number(
+    columns = c(pct_Male, pct_Female),
+    decimals = 2
+  ) %>%
+  theme_gt_paper() %>%
+  tab_style(
+    style = cell_fill(color = adjustcolor(col_male, alpha.f = 0.10)),
+    locations = cells_body(columns = c(n_Male, pct_Male))
+  ) %>%
+  tab_style(
+    style = cell_fill(color = adjustcolor(col_female, alpha.f = 0.10)),
+    locations = cells_body(columns = c(n_Female, pct_Female))
+  ) %>%
+  tab_style(
+    style = cell_text(style = "italic"),
+    locations = cells_body(columns = c(pct_Male, pct_Female))
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(rows = subtype == "Total")
+  ) %>%
+  tab_style(
+    style = cell_borders(
+      sides = "top",
+      style = "double",
+      color = col_proxy
+    ),
+    locations = cells_body(rows = subtype == "Total")
+  )
+
+gt_gender_table
+
+```
+```{r}
+gtsave(gt_gender_table, "out/gender_table.png")
+```
+
+```{r CAT_metrics_table}
+gt_cat_metrics_table <- cat_metrics %>%
+  gt() %>%
+  cols_label(
+    Study = "Study",
+    Condition = "Condition",
+    `Subtype(s)` = "Subtype(s)",
+    LMS_total = html("LMS<sub>total</sub> (%)"),
+    MPS_total = html("MPS<sub>total</sub> (%)"),
+    BS_total = html("BS<sub>total</sub> (%)")
+  ) %>%
+  fmt_number(
+    columns = c(LMS_total, MPS_total, BS_total),
+    decimals = 2
+  ) %>%
+  theme_gt_paper() %>%
+  tab_style(
+    style = cell_text(style = "italic"),
+    locations = cells_body(columns = c(LMS_total, MPS_total, BS_total))
+  ) %>%
+  tab_style(
+    style = cell_borders(
+      sides = "top",
+      style = "double",
+      color = col_proxy
+    ),
+    locations = cells_body(rows = Study == "S2" & Condition == "Explicit")
+  )
+
+gt_cat_metrics_table
+
+```
+```{r}
+#saving plot
+gtsave(gt_cat_metrics_table, table_dir)
+```
+
+```{r}
+platania_props <- platania_clean %>%
+  group_by(Gender) %>%
+  mutate(prop = n / sum(n) * 100) %>%
+  ungroup()
+
+platania_props
+```
+
+```{r}
+tab_Gender_subtype <- platania_clean %>%
+  pivot_wider(names_from = subtype, values_from = n) %>%
+  tibble::column_to_rownames("Gender") %>%
+  as.matrix()
+
+tab_Gender_subtype
+chisq.test(tab_Gender_subtype)
+```
+```{r}
+platania_overall_relative <- platania_clean %>%
+  group_by(subtype) %>%
+  summarise(
+    n = sum(n),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    prop = n / sum(n) * 100,
+    subtype = factor(subtype, levels = c("ADHD-I", "ADHD-HI", "ADHD-C"))
+  ) %>%
+  arrange(subtype)
+
+platania_overall_relative
+```
+```{r}
+proxy_dist <- ggplot(platania_overall_relative,
+       aes(x = subtype, y = prop)) +
+  
+  geom_col(
+    fill = col_male,
+    width = 0.6,
+    linewidth = 0.3
+  ) +
+  
+  # percentage labels
+  geom_text(
+    aes(label = sprintf("%.1f%%", prop)),
+    vjust = -0.6,
+    size = 3
+  ) +
+  
+  labs(
+    x = "ADHD subtype",
+    y = "Proportion (%)",
+    # title = "Subtype distribution (Platania et al.)",
+    # subtitle = "Relative distribution across ADHD subtypes"
+  ) +
+  
+  scale_y_continuous(
+    limits = c(0, 65),
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  
+  theme_paper()
+
+proxy_dist
+```
+```{r}
+ggsave(
+  filename = "out/proxy_dist.png",
+  plot = proxy_dist,
+  width = 6.5,
+  height = 4.5,
+  dpi = 300
+)
+```
+
+```{r}
+relative_proxy_dist <- ggplot(
+  platania_props, aes(x = subtype, y = prop, fill = Gender)
+  ) +
+  geom_col(position = "dodge", width = 0.7, width = 0.7) +
+  geom_text(
+    aes(label = sprintf("%.1f%%", prop)),
+    position = position_dodge(width = 0.7),
+    vjust = -0.6,
+    size = 3.2
+  ) +
+  
+  scale_fill_manual(
+    values = c("Male" = col_male_proxy, "Female" = col_female_proxy), name ="Proxy gender"
+    ) +
+  
+  labs(
+    x = "ADHD subtype",
+    y = "Proportion within proxy gender",
+    # title = "Subtype distribution by Gender",
+    # subtitle = "Platania proxy data"
+  ) +
+  
+  scale_y_continuous(
+    limits = c(0, 65),
+    breaks = seq(0, 60, 15),
+    labels = function(x) paste0(x, "%"),
+    expand = expansion(mult = c(0, 0.08))
+  ) +
+  theme_paper() +
+theme(
+  legend.position = "top",
+  axis.title.x = element_text(margin = margin(t = 10))
+)
+
+relative_proxy_dist
+```
+
+
+```{r}
+ggsave(
+  filename = "out/relative_proxy_dist.png",
+  plot = relative_proxy_dist,
+  width = 6.5,
+  height = 4.5,
+  dpi = 300
+)
+```
+
+
+
