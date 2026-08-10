@@ -6,7 +6,7 @@
 This repository contains the dataset and analysis from [Elene Hansen & Kristensten-McLachlan (2026)](insert hyperlink):
 
 Repo structure
-
+```
 assignment_2/
 ├── data/                        # Possible data storage for project
 │
@@ -23,7 +23,7 @@ assignment_2/
 ├── setup.sh                     # Environment setup script
 ├── run.sh                       # Runs the full analysis pipeline
 └── README.md                    # Project documentation
-
+`
 
 | Item                    | Location                                      | Documentation                   |
 |-------------------------|--------------------------------------------------------|--------------------------------|
