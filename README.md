@@ -5,6 +5,26 @@
 # Overview
 This repository contains the dataset and analysis from [Elene Hansen & Kristensten-McLachlan (2026)](insert hyperlink):
 
+Repo structure
+
+assignment_2/
+├── data/                        # Possible data storage for project
+│
+├── out/
+│   ├── plots/                   # Saved plots and visualizations (.png)
+│   └── reports/                 # Classification reports and evaluation outputs (.txt & .csv)
+│
+├── src/
+│   ├── logistic_regression.py   # Logistic regression baseline classifier
+│   ├── neural_network.py        # MLP neural network classifier with GridSearchCV
+│   └── utils.py                 # Shared utility and preprocessing functions
+│
+├── requirements.txt             # Python package dependencies
+├── setup.sh                     # Environment setup script
+├── run.sh                       # Runs the full analysis pipeline
+└── README.md                    # Project documentation
+
+
 | Item                    | Location                                      | Documentation                   |
 |-------------------------|--------------------------------------------------------|--------------------------------|
 | | | |
@@ -58,10 +78,12 @@ This work was made possible thanks to the following open-source resources:
 
 See also [`metrics/README.md`](metrics/README.md).
 
-# Personal TO DO
+# GITHUB TO DO
 __To do: ZUSAMMEN__
+- update structure?
 - check up on license 
 - check up on citation
+- "should code be updated? Right now it is nooooooot very nice looking"
 
 __To do: MATILDE__
 - add to readme.md files in all directories
