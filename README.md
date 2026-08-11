@@ -7,21 +7,39 @@ This repository contains the dataset and analysis from [Elene Hansen & Kristenst
 
 Repo structure
 ```
-assignment_2/
-├── data/                        # Possible data storage for project
+self_diagnostic_bias_llms/
+├── data/                        # inputs for later analyses
+│
+├── src/                         # scripts that either transform or analyse data inputs
+│   ├── mapping/                 # semi-automated mapping procedure used for the Reddit-DIVA ()
+│   │    ├──
+│   │    └──
+│   ├── experiments/
+│   │    ├──
+│   │    └──        
+│   └── analysis/                # 
+│
+├── results/
+│   ├── responses/
+│   │    ├── study1_explicit_responses.csv
+│   │    ├── study1_implicit_responses.csv
+│   │    ├── study2_explicit_responses.csv
+│   │    └── study2_implicit_responses.csv
+│   │
+│   ├──  metrics/
+│   │    ├── study1_explicit_metrics.csv
+│   │    ├── study1_implicit_metrics.csv
+│   │    ├── study2_explicit_metrics.csv
+│   │    └── study2_implicit_metrics.csv
+│   └──
 │
 ├── out/
 │   ├── plots/                   # Saved plots and visualizations (.png)
 │   └── reports/                 # Classification reports and evaluation outputs (.txt & .csv)
 │
-├── src/
-│   ├── logistic_regression.py   # Logistic regression baseline classifier
-│   ├── neural_network.py        # MLP neural network classifier with GridSearchCV
-│   └── utils.py                 # Shared utility and preprocessing functions
-│
 ├── requirements.txt             # Python package dependencies
+├── LICENSE
 ├── setup.sh                     # Environment setup script
-├── run.sh                       # Runs the full analysis pipeline
 └── README.md                    # Project documentation
 `
 
