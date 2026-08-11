@@ -41,7 +41,12 @@ self_diagnostic_bias_llms/
 ├── LICENSE
 ├── setup.sh                     # Environment setup script
 └── README.md                    # Project documentation
-`
+```
+<br>
+
+*NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
+
+<br>
 
 | Item                    | Location                                      | Documentation                   |
 |-------------------------|--------------------------------------------------------|--------------------------------|
@@ -52,6 +57,7 @@ self_diagnostic_bias_llms/
 
 <br>
 
+*NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
 (perhaps more here)
 
 <div style="margin-top: 1.2em;"></div> <!-- 1.2em before notes, 2em before new headings -->
