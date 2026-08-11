@@ -5,7 +5,7 @@
 # Overview
 This repository contains the dataset and analysis from [Elene Hansen & Kristensten-McLachlan (2026)](insert hyperlink):
 
-Repo structure
+## Repo structure
 ```
 self_diagnostic_bias_llms/
 ├── data/                        # inputs for later analyses
@@ -42,8 +42,6 @@ self_diagnostic_bias_llms/
 ├── setup.sh                     # Environment setup script
 └── README.md                    # Project documentation
 ```
-<br>
-
 *NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
 
 <br>
