@@ -21,17 +21,17 @@ self_diagnostic_bias_llms/
 │
 ├── results/
 │   ├── responses/
-│   │    ├── study1_explicit_responses.csv
-│   │    ├── study1_implicit_responses.csv
-│   │    ├── study2_explicit_responses.csv
-│   │    └── study2_implicit_responses.csv
+│   │   ├── s1_ex_responses.csv
+│   │   ├── s1_im_responses.csv
+│   │   ├── s2_ex_responses.csv
+│   │   └── s2_im_responses.csv
 │   │
-│   ├──  metrics/
-│   │    ├── study1_explicit_metrics.csv
-│   │    ├── study1_implicit_metrics.csv
-│   │    ├── study2_explicit_metrics.csv
-│   │    └── study2_implicit_metrics.csv
-│   └──
+│   └── metrics/                          # CAT derived metrics 
+│       ├── s1_ex_metrics.csv
+│       ├── s1_im_metrics.csv
+│       ├── s2_ex_metrics.csv
+│       └── s2_im_metrics.csv
+│   
 │
 ├── out/
 │   ├── plots/                   # Saved plots and visualizations (.png)
