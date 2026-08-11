@@ -55,9 +55,6 @@ self_diagnostic_bias_llms/
 
 <br>
 
-*NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
-(perhaps more here)
-
 <div style="margin-top: 1.2em;"></div> <!-- 1.2em before notes, 2em before new headings -->
 
 # Technical Requirements
