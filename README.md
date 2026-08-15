@@ -1,6 +1,4 @@
-![bias_llm_update](https://github.com/user-attachments/assets/e91d3b3a-ea36-408f-b0c6-56dc8d371372)
-
-
+![header_self_diagnostic_bias_llms](https://github.com/user-attachments/assets/70669ddf-6c5a-4be6-a7a3-93829434fee6)
 
 # Overview
 This repository contains the dataset and analysis from [Elene Hansen & Kristensten-McLachlan (2026)](insert hyperlink):
