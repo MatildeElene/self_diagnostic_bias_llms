@@ -53,22 +53,11 @@ The code was run using Python 4.4.2 on macOS 14.3. The project requires:
 <div style="margin-top: 2.2em;"></div>
 <a name="usage"></a>
 
-# Usage
-
-```bash
-bash run.sh
-```
-
-The command runs ().
-
-> Note: This does not execute `stats.rmd`. It must be run seperately (requires R and R Markdown, see [Technical Requirements](#️-technical-requirements)).
-
-<div style="margin-top: 1.2m;"></div>
-
 # Citation 
 If you use our work, please cite: 
 
 ```
+*Citation forthcoming*
 ```
 <div style="margin-top: 1.2em;"></div>
 
@@ -77,19 +66,6 @@ If you use our work, please cite:
 <div style="margin-top: 2.2em;"></div>
 
 # Acknowledgements
-This work was made possible thanks to the following open-source resources:
+This work was partially supported by the Danish National Research Foundation (Grant No.:
+DNRF193) through TEXT: Center for Contemporary Cultures of Text, Aarhus University.
 
-See also [`metrics/README.md`](metrics/README.md).
-
-# GITHUB TO DO
-__To do: ZUSAMMEN__
-- update structure?
-- check up on license 
-- check up on citation
-- "should code be updated? Right now it is nooooooot very nice looking"
-
-__To do: MATILDE__
-- add to readme.md files in all directories
-- check up on code + check python version + check up on rstudio version
-
-__To do: ROSS__
