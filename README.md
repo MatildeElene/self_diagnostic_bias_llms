@@ -1,7 +1,7 @@
 ![header_self_diagnostic_bias_llms](https://github.com/user-attachments/assets/70669ddf-6c5a-4be6-a7a3-93829434fee6)
 
 # Overview
-This repository contains the dataset and analysis from [Elene Hansen & Kristensten-McLachlan (2026)]:
+This repository contains the dataset and analysis outputs from [Elene Hansen & Kristensten-McLachlan (2026)]:
 
 ## Repo structure
 ```
