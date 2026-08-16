@@ -6,38 +6,30 @@ This repository contains the dataset and analysis outputs from [Elene Hansen & K
 ## Repo structure
 ```
 self_diagnostic_bias_llms/
-├── data/                        # inputs for later analyses
+├── data/                        # Input data used throughout the pipeline
 │
 ├── src/                         # scripts that either transform or analyse data inputs
-│   ├── mapping/                 # semi-automated mapping procedure used for the Reddit-DIVA ()
-│   │    ├──
-│   │    └──
-│   ├── experiments/
-│   │    ├──
-│   │    └──        
-│   └── analysis/                # 
 │
-├── results/
-│   ├── responses/
+├── results/                     # Model outputs and derived evaluation results
+│   ├── responses/               # Raw model responses from the four experiments
 │   │   ├── s1_ex_responses.csv
 │   │   ├── s1_im_responses.csv
 │   │   ├── s2_ex_responses.csv
 │   │   └── s2_im_responses.csv
 │   │
-│   └── metrics/                          # CAT derived metrics 
+│   └── metrics/                   # CAT-derived evaluation metrics
 │       ├── s1_ex_metrics.csv
 │       ├── s1_im_metrics.csv
 │       ├── s2_ex_metrics.csv
 │       └── s2_im_metrics.csv
 │   
 │
-├── out/
-│   ├── plots/                   # Saved plots and visualizations (.png)
-│   └── reports/                 # Classification reports and evaluation outputs (.txt & .csv)
+├── out/                         # Generated analysis outputs
+│   ├── plots/                   # Figures and visualizations (.png)
+│   └── reports/                 # Statistical and evaluation reports (.txt, .csv)
 │
 ├── requirements.txt             # Python package dependencies
-├── LICENSE
-├── setup.sh                     # Environment setup script
+├── LICENSE                      # Repository license
 └── README.md                    # Project documentation
 ```
 *NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
