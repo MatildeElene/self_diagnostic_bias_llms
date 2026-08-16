@@ -42,17 +42,6 @@ self_diagnostic_bias_llms/
 ```
 *NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
 
-<br>
-
-| Item                    | Location                                      | Documentation                   |
-|-------------------------|--------------------------------------------------------|--------------------------------|
-| | | |
-| | | |
-| | | |
-| | | |
-
-<br>
-
 <div style="margin-top: 1.2em;"></div> <!-- 1.2em before notes, 2em before new headings -->
 
 # Technical Requirements
@@ -60,8 +49,7 @@ The code was run on (python v) on a macOS ('14.3'). The project requires:
 
 | Tool     | Installation                                                                 |
 |----------|--------------------------------------------------------------------------------------|
-| [make](https://www.gnu.org/software/make/manual/make.html) | Installed via [Homebrew](https://formulae.brew.sh/formula/make)                  |
-| [uv](https://docs.astral.sh/uv/)                         | Installed through this project's `makefile` (see [Usage](#usage))                 |
+
 | [R 4.4.3](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/) + R Markdown           | Installed separately via [CRAN](https://cran.r-project.org/bin/macosx/big-sur-arm64/base) for R and [Posit's RStudio](https://docs.posit.co/previous-versions/rstudio.html#section-1) for running R-Markdown (or an IDE of your liking).                                |
 
 <div style="margin-top: 2.2em;"></div>
