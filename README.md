@@ -42,7 +42,7 @@ The code was run using Python 4.4.2 on macOS 14.3. The project requires:
 | Tool | Installation |
 |------|--------------|
 | [R 4.4.2](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/) + R Markdown | Install R separately via [CRAN](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/). R Markdown files can be run using [RStudio](https://docs.posit.co/previous-versions/rstudio.html#section-1) or another compatible IDE. |
-<div style="margin-top: 2.2em;"></div>
+<div style="margin-top: 2em;"></div>
 <a name="usage"></a>
 
 # Citation 
