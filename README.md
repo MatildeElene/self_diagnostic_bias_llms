@@ -45,6 +45,10 @@ The code was run using Python 4.4.2 on macOS 14.3. The project requires:
 <div style="margin-top: 2em;"></div>
 <a name="usage"></a>
 
+# License
+
+Gender Associations in LLM-Mediated ADHD Self-Diagnosis © 2026 by Matilde Elene Hansen and Ross Deans Kristensen-McLachlan is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+
 # Citation 
 If you use our work, please cite: 
 
