@@ -19,7 +19,14 @@ self_diagnostic_bias_llms/
 │   ├── platania_proxy_data.csv  # Extracted clinical reference data
 │   ├── platania_supplementary.xlsx
 │   └── README.md
+│
 ├── src/                         # Analysis and visualization scripts
+│   ├── utils/                   # Reusable analysis helper functions
+│   ├── figures_study1.py        # Generates Study 1 figures
+│   ├── figures_study2.py        # Generates Study 2 figures
+│   ├── plots_LLM_rstudio.Rmd    # R Markdown visualization script
+│   ├── simple_stats.py          # Descriptive statistics and summaries
+│   └── README.md
 │
 ├── results/                     # Model outputs and derived evaluation results
 │   ├── responses/               # Raw model responses from the four experiments
@@ -28,12 +35,11 @@ self_diagnostic_bias_llms/
 │   │   ├── s2_ex_responses.csv
 │   │   └── s2_im_responses.csv
 │   │
-│   └── metrics/                   # CAT-derived evaluation metrics
+│   └── metrics/                 # CAT-derived evaluation metrics
 │       ├── s1_ex_metrics.csv
 │       ├── s1_im_metrics.csv
 │       ├── s2_ex_metrics.csv
 │       └── s2_im_metrics.csv
-│   
 │
 ├── out/                         # Generated analysis outputs
 │   ├── plots/                   # Figures and visualizations (.png)
