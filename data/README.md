@@ -1,5 +1,7 @@
 # Data Overview
-This directory contains the proxy data used to construct the clinically informed reference distributions in the present study. The original supplementary material provided by [Platania et al., 2024](https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1549028/full) is included alongside an extracted CSV containing only the variables and observations relevant to the present analyses. The original files are retained unchanged to preserve the provenance of the derived proxy data.
+This directory contains the data used to construct the experimental context lists and clinically informed reference distributions in the present study. It includes the base symptom clauses and final paraphrased context lists used as experimental inputs, alongside the proxy data used for comparative evaluation.
+
+The original supplementary material provided by [Platania et al., 2024](https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1549028/full) is included alongside an extracted CSV containing only the variables and observations relevant to the present analyses. The original file is retained unchanged to preserve the provenance of the derived proxy data.
 
 | Folder/File                             | Description                                               |
 |----------------------------------------|-----------------------------------------------------------|
