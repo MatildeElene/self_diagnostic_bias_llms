@@ -1,0 +1,199 @@
+﻿ ;English translation;Frequency Men;Frequency Women;Percent Men;Percent Women;Expected Freq Men;Expected Freq Women; p-value (chi-square) ;Total Frequency;Total Percent;Total Selections Women;Total Selections Men;Grand Total;χ2;φ;OR;SE ln(OR);Lower Bound OR;Upper Bound OR
+A1: Attention to detail;;;;;;;;;;;68961;41328;110289;;;;;;
+DIVA_A1a1 Slordige fouten maken ;Makes careless mistakes;454;678;51.53;49.27;424;708; 0.067173 ;1132;50.16;;;;3.35;0.05;1.094595622;0.086325863;0.924212097;1.296390275
+DIVA_A1a2 Langzaam moeten werken om fouten te voorkomen;Works slowly to avoid mistakes;294;518;33.37;37.65;304;508; 0.456258 ;812;35.98;;;;0.56;0.03;0.829596206;0.090559048;0.694674472;0.990722839
+ DIVA_A1a3 Levert slordig werk af;Work is inaccurate;237;293;26.90;21.29;199;331; 0.000570 ;530;23.48;;;;11.87;0.15;1.360264346;0.100541209;1.116968461;1.656554465
+DIVA_A1a4 Instructies niet nauwkeurig lezen;Does not read instructions carefully;327;585;37.12;42.51;342;570; 0.313000 ;912;40.41;;;;1.02;0.03;0.798102379;0.088525603;0.670971527;0.949321069
+DIVA_A1a5 Kijkt over details heen of mist deze;Overlooks or misses details;355;572;40.30;41.57;347;580; 0.604641 ;927;41.07;;;;0.27;0.02;0.948642612;0.087807032;0.798656028;1.126796485
+DIVA_A1a6 Slecht zijn in gedetailleerd werken;MISSING;211;304;23.95;22.09;193;322; 0.100974 ;515;22.82;;;;2.69;0.07;1.110526316;0.102245701;0.908857001;1.356944709
+DIVA_A1a7 Te veel tijd nodig hebben voor details;Too much time needed to complete detailed tasks;357;594;40.52;43.17;356;595; 0.965966 ;951;42.14;;;;0.00;0.00;0.896927288;0.087588763;0.755440348;1.064913414
+DIVA_A1a8 Verzanden in details;Gets easily bogged down by details;358;565;40.64;41.06;346;577; 0.409495 ;923;40.89;;;;0.68;0.03;0.982547928;0.08779692;0.827217088;1.167046044
+DIVA_A1a9 Te snel werken en daardoor fouten maken;Works too quickly and therefore makes mistakes;292;492;33.14;35.76;294;490; 0.895275 ;784;34.74;;;;0.02;0.00;0.890747719;0.091028525;0.745194556;1.064730669
+;;;;;;;;;;;;;;;;;;;
+A2: Holding attention on tasks;;;;;;;;;;;;;;;;;;;
+DIVA_A2a1 Niet lang de aandacht bij taken kunnen houden;Not able to keep attention on tasks for long;688;1129;78.09;82.05;681;1136; 0.729842 ;1817;80.51;;;;0.12;0.01;0.779891417;0.107560021;0.631651021;0.962921933
+DIVA_A2a2 Snel afgeleid zijn door eigen associaties/gedachten;Quickly distracted by own thoughts or associations;730;1160;82.86;84.30;708;1182; 0.300885 ;1890;83.74;;;;1.07;0.02;0.900205526;0.116120964;0.716964273;1.130279457
+DIVA_A2a3 Gemakkelijk afgeleid door gedachten aan iets anders;Easily distracted by unrelated thoughts;637;1068;72.30;77.62;639;1066; 0.924051 ;1705;75.54;;;;0.01;0.00;0.752885737;0.099253726;0.619787185;0.914567043
+DIVA_A2a4 Problemen geconcentreerd te blijven tijdens een gesprek of bij het lezen van een lange tekst;Difficulty remaining focused during lectures and/or conversations;559;886;63.45;64.39;541;904; 0.340936 ;1445;64.02;;;;0.91;0.03;0.960104034;0.089799684;0.805154565;1.144873041
+DIVA_A2a5 Moeite hebben een film uit te kijken of een boek te lezen;Finds it difficult to watch a film through to the end, or to read a book;446;785;50.62;57.05;461;770; 0.368088 ;1231;54.54;;;;0.81;0.03;0.771904239;0.086642575;0.65134604;0.914776658
+DIVA_A2a6 Snel ergens op uitgekeken zijn;Quickly becomes bored with things;434;713;49.26;51.82;430;717; 0.798227 ;1147;50.82;;;;0.07;0.01;0.902830464;0.08632557;0.762297325;1.069271555
+DIVA_A2a7  Vragen stellen over onderwerpen die al besproken zijn;Asks questions about subjects that have already been discussed;184;308;20.89;22.38;184;308; 0.972918 ;492;21.80;;;;0.00;0.00;0.915388772;0.105131278;0.74493097;1.124851345
+;;;;;;;;;;;;;;;;;;;
+A3: Listening;;;;;;;;;;;;;;;;;;;
+DIVA_A_3a1 Dromerig of afwezig zijn;Dreamy or preoccupied ;537;878;60.95;63.81;530;885; 0.710252 ;1415;62.69;;;;0.14;0.01;0.885422737;0.088972796;0.743730337;1.05410978
+DIVA_A_3a2 Moeite om zich te concentreren op een gesprek;Difficulty concentrating on a conversation;531;821;60.27;59.67;507;845; 0.170887 ;1352;59.90;;;;1.88;0.04;1.025595963;0.088092058;0.862960325;1.218882316
+DIVA_A_3a3  Achteraf niet weten waar een gesprek over ging;Afterwards, not knowing what a conversation was about;479;784;54.37;56.98;473;790; 0.739381 ;1263;55.96;;;;0.11;0.01;0.899736014;0.086832852;0.758929594;1.066666659
+DIVA_A_3a4 Vaak het onderwerp van het gesprek veranderen;Often changing the subject of the conversation ;410;665;46.54;48.33;403;672; 0.651382 ;1075;47.63;;;;0.20;0.01;0.930702553;0.086443021;0.78565001;1.102535773
+DIVA_A_3a5  Anderen zeggen dat je er met je gedachten niet bij bent;Others saying that your thoughts are somewhere else;335;586;38.02;42.59;345;576; 0.490826 ;921;40.81;;;;0.47;0.02;0.827144982;0.088254654;0.695757284;0.983344102
+DIVA_A_3a6  Lijkt afwezig, zelfs als er geen duidelijke afleiding is;Mind seems elsewhere, even in the absence of any obvious distraction;279;440;31.67;31.98;269;450; 0.460787 ;719;31.86;;;;0.54;0.03;0.9858955;0.092663166;0.82215633;1.182244666
+;;;;;;;;;;;;;;;;;;;
+A4: Following through on instructions;;;;;;;;;;;;;;;;;;;
+DIVA_A4a1  Dingen door elkaar doen zonder ze af te maken;Does things that are muddled up together without completing them;653;1089;74.12;79.14;653;1089; 0.990926 ;1742;77.18;;;;0.00;0.00;0.754800799;0.101587168;0.618528347;0.92109642
+DIVA_A4a2  Begint wel met een taak, maar raakt al snel afgeleid;Starts tasks but quickly loses focus and is easily sidetracked;655;1133;74.35;82.34;670;1118; 0.463424 ;1788;79.22;;;;0.54;0.02;0.621597451;0.104639071;0.506335817;0.763097095
+DIVA_A4a3  Deadlines nodig hebben om taken af te maken;Needing a time limit to complete tasks;577;996;65.49;72.38;589;984; 0.516936 ;1573;69.69;;;;0.42;0.02;0.724146586;0.093049293;0.603422265;0.869023749
+DIVA_A4a4  Moeite administratie af te maken;Difficulty completing administrative tasks;426;598;48.35;43.46;384;640; 0.006339 ;1024;45.37;;;;7.45;0.09;1.218082252;0.08661875;1.0278867;1.443470737
+DIVA_A4a5  Moeite gebruiksaanwijzingen op te volgen;Difficultly following instructions from a manual;279;469;31.67;34.08;280;468; 0.922136 ;748;33.14;;;;0.01;0.00;0.896276803;0.092087409;0.748265585;1.073565488
+;;;;;;;;;;;;;;;;;;;
+A5: Organising tasks;;;;;;;;;;;;;;;;;;;
+DIVA_A5a1  Moeite de dagelijkse dingen te plannen;Difficultly with planning activities of daily life;458;756;51.99;54.94;455;759; 0.854893 ;1214;53.79;;;;0.03;0.01;0.887963276;0.086505068;0.749480614;1.052033587
+DIVA_A5a2  Moeite om een reeks taken achter elkaar af te maken; Difficulty managing sequential tasks;361;611;40.98;44.40;364;608; 0.830404 ;972;43.07;;;;0.05;0.01;0.869208737;0.087389992;0.732379568;1.031601456
+DIVA_A5a3  Huis en/of werkplek zijn rommelig; House and/or workplace are disorganised;410;681;46.54;49.49;409;682; 0.941392 ;1091;48.34;;;;0.01;0.00;0.888383824;0.086425947;0.749951867;1.05236863
+"DIVA_A5a4 Lastig om benodigdheden en eigendommen op hun 
+plek op te bergen"; Difficulty keeping materials and belongings in order;246;407;27.92;29.58;245;408; 0.915987 ;653;28.93;;;;0.01;0.00;0.922339376;0.095544953;0.764823536;1.112295692
+DIVA_A5a5  Werk is slordig en wanordelijk; Works messy and disorganized;125;179;14.19;13.01;114;190; 0.189089 ;304;13.47;;;;1.72;0.08;1.105679702;0.125478147;0.864609856;1.413964455
+DIVA_A5a6  Te veel plannen of niet efficiënt plannen; Planning too many tasks or non-efficient planning;396;779;44.95;56.61;440;735; 0.007586 ;1175;52.06;;;;7.13;0.08;0.625734817;0.086866836;0.52777374;0.741878635
+DIVA_A5a7  Regelmatig dubbele afspraken maken; Regularly booking things to take place at the same time (double-booking);234;417;26.56;30.31;244;407; 0.420651 ;651;28.84;;;;0.65;0.03;0.831752527;0.096228549;0.688783499;1.004397271
+DIVA_A5a8  Te laat komen; Arriving late;360;606;40.86;44.04;362;604; 0.895086 ;966;42.80;;;;0.02;0.00;0.877976473;0.08744158;0.739692309;1.042112617
+DIVA_A5a9  Deadlines niet halen; Fails to meet deadlines;190;249;21.57;18.10;165;274; 0.011941 ;439;19.45;;;;6.32;0.12;1.244514963;0.107766932;1.007551046;1.53720995
+DIVA_A5a10 Niet consequent een agenda kunnen gebruiken; Not able to use an agenda or diary consistently;362;481;41.09;34.96;316;527; 0.001036 ;843;37.35;;;;10.76;0.11;1.297834072;0.088800528;1.090512471;1.544570397
+DIVA_A5a11  Inflexibel zijn door vasthouden aan schema’s; Inflexible because of the need to keep to schedules;104;222;11.80;16.13;122;204; 0.037720 ;326;14.44;;;;4.32;0.12;0.695769128;0.1275674;0.541848146;0.893413926
+DIVA_A5a12 Slecht tijdsbesef en tijdsindeling; Poor sense and management of time;486;872;55.16;63.37;509;849; 0.199687 ;1358;60.17;;;;1.64;0.03;0.711136918;0.087864525;0.598634072;0.844782714
+DIVA_A5a13 Schema’s maken en die niet gebruiken; Creating schedules but not using them;187;405;21.23;29.43;222;370; 0.003097 ;592;26.23;;;;8.75;0.12;0.646020564;0.101427401;0.529553199;0.788103198
+DIVA_A5a14 Anderen nodig hebben om zaken te structureren; Needing other people to structure things;259;331;29.40;24.06;221;369; 0.001262 ;590;26.14;;;;10.40;0.13;1.314612254;0.097194685;1.086585462;1.590491901
+;;;;;;;;;;;;;;;;;;;
+A6: Avoiding difficult tasks ;;;;;;;;;;;;;;;;;;;
+DIVA_A6a1 Eerst doen wat het makkelijkst of leukst is;Do the easiest or nicest things first of all ;543;909;61.63;66.06;544;908; 0.952440 ;1452;64.33;;;;0.00;0.00;0.825346144;0.089675181;0.692313932;0.983941282
+DIVA_A6a2 Saaie of lastige taken vaak uitstellen; Often postpone boring or difficult tasks;707;1151;80.25;83.65;696;1162; 0.606006 ;1858;82.32;;;;0.27;0.01;0.794286827;0.111690679;0.638122907;0.98866779
+DIVA_A6a3 Taken uitstellen zodat deadlines gemist worden; Postpone tasks so that deadlines are missed;302;437;34.28;31.76;277;462; 0.056670 ;739;32.74;;;;3.63;0.07;1.120759773;0.091606038;0.936560637;1.341186485
+DIVA_A6a4 Monotoon werk zoals administratie vermijden; Avoid monotonous work, such as administration;482;696;54.71;50.58;441;737; 0.014596 ;1178;52.19;;;;5.96;0.07;1.180249474;0.086535104;0.996124559;1.39840827
+"DIVA_A6a5 Vermijden van rapport opstellen, formulieren invullen, of 
+lange artikelen doornemen"; Avoids preparing reports, completing forms, or reviewing lengthy papers;405;617;45.97;44.84;383;639; 0.154526 ;1022;45.28;;;;2.03;0.04;1.046657723;0.086650128;0.883174669;1.240402865
+DIVA_A6a6 Niet van lezen houden vanwege de mentale inspanning; Do not like reading due to mental effort;361;522;40.98;37.94;331;552; 0.036269 ;883;39.12;;;;4.38;0.07;1.135772178;0.088203339;0.955456739;1.350117057
+DIVA_A6a7 Vermijden van zaken die veel concentratie vragen; Avoidance of tasks that require a lot of concentration ;379;654;43.02;47.53;387;646; 0.603039 ;1033;45.77;;;;0.27;0.02;0.833479538;0.086859932;0.703004775;0.988169873
+;;;;;;;;;;;;;;;;;;;
+A7: Losing things;;;;;;;;;;;;;;;;;;;
+"DIVA_A7a1 Gereedschap, papierwerk, bril, mobiele telefoon, 
+portefeuille, sleutels of agenda kwijtraken";Mislays tools, paperwork, eyeglasses, mobile telephones, wallet, keys, or agenda;496;947;56.30;68.82;541;902; 0.014996 ;1443;63.93;;;;5.92;0.06;0.583617439;0.089445515;0.489768332;0.695449853
+DIVA_A7a2 Regelmatig spullen laten liggen; Often leaves things behind ;390;689;44.27;50.07;404;675; 0.367530 ;1079;47.81;;;;0.81;0.03;0.7919917;0.086647247;0.668290065;0.938590719
+DIVA_A7a3 Papieren voor het werk kwijtraken; Loses papers for work;188;280;21.34;20.35;175;293; 0.227814 ;468;20.74;;;;1.45;0.06;1.061884148;0.106047101;0.862597157;1.307212682
+DIVA_A7a4 Veel tijd kwijt met zoeken naar spullen; Loses a lot of time searching for things;419;762;47.56;55.38;443;738; 0.156865 ;1181;52.33;;;;2.00;0.04;0.730777971;0.086557134;0.616746264;0.865893276
+DIVA_A7a5 In paniek als anderen dingen verplaatsen; Gets in a panic if other people move things around;234;438;26.56;31.83;252;420; 0.155685 ;672;29.77;;;;2.02;0.05;0.774533675;0.095751253;0.642000243;0.934427081
+DIVA_A7a6 Spullen verkeerd opbergen; Stores things away in the wrong place;280;545;31.78;39.61;309;516; 0.036041 ;825;36.55;;;;4.40;0.07;0.710375674;0.090959078;0.594377212;0.849012357
+DIVA_A7a7 Lijsten, telefoonnummers of notities kwijtraken; Loses notes, lists or telephone numbers;136;213;15.44;15.48;131;218; 0.563685 ;349;15.46;;;;0.33;0.03;0.996741973;0.119372962;0.788806409;1.259490985
+;;;;;;;;;;;;;;;;;;;
+A8: Easily distracted;;;;;;;;;;;;;;;;;;;
+DIVA_A8a1 Moeite zich af te sluiten voor externe prikkels;Difficulty shutting off from external stimuli;707;1133;80.25;82.34;689;1151; 0.399144 ;1840;81.52;;;;0.71;0.02;0.871458137;0.110269635;0.702074373;1.081707741
+DIVA_A8a2 Na afleiding moeilijk de draad weer oppakken; After being distracted, difficult to pick up the thread again;472;816;53.58;59.30;483;805; 0.540020 ;1288;57.07;;;;0.38;0.02;0.791984275;0.087033536;0.667778016;0.939292815
+DIVA_A8a3 Snel afgeleid door geluiden of gebeurtenissen; Easily distracted by noises or events;694;1125;78.77;81.76;682;1137; 0.548856 ;1819;80.59;;;;0.36;0.01;0.828016637;0.107988279;0.670066004;1.023200024
+DIVA_A8a4 Gesprekken van anderen meeluisteren; Easily distracted by the conversations of others;519;863;58.91;62.72;518;864; 0.949901 ;1382;61.23;;;;0.00;0.00;0.852246756;0.088302206;0.71680496;1.013280562
+DIVA_A8a5 Moeite informatie te filteren/selecteren; Difficulty in filtering and/or selecting information;357;634;40.52;46.08;371;620; 0.346265 ;991;43.91;;;;0.89;0.03;0.797354733;0.087375702;0.671855501;0.946296592
+;;;;;;;;;;;;;;;;;;;
+A9: Forgetful;;;;;;;;;;;;;;;;;;;
+DIVA_A9a1 Afspraken of andere verplichtingen vergeten; Forgets appointments or other obligations;431;662;48.92;48.11;410;683; 0.180612 ;1093;48.43;;;;1.79;0.04;1.033011078;0.086333899;0.872199996;1.223471556
+DIVA_A9a2 Sleutels, agenda etc. vergeten; Forgets keys, agenda etc. ;314;627;35.64;45.57;353;588; 0.009305 ;941;41.69;;;;6.76;0.08;0.661547246;0.088760304;0.555912667;0.787254519
+DIVA_A9a3 Vaak aan afspraken herinnerd moeten worden; Needs frequent reminders for appointments;462;669;52.44;48.62;424;707; 0.018987 ;1131;50.11;;;;5.50;0.07;1.165255734;0.086373216;0.983782024;1.380205058
+DIVA_A9a4 Vergeten terug te bellen of rekeningen te betalen; Forgets to pay bills or to return calls;307;508;34.85;36.92;305;510; 0.907854 ;815;36.11;;;;0.01;0.00;0.91386595;0.090111414;0.765910656;1.090402604
+DIVA_A9a5 Terug naar huis moeten om vergeten spullen te halen; Returning home to fetch forgotten things;288;520;32.69;37.79;303;505; 0.282825 ;808;35.80;;;;1.15;0.04;0.799481126;0.090828762;0.669103362;0.955263577
+DIVA_A9a6 Starre schema’s om dingen niet te vergeten; Rigid use of lists to make sure things aren’t forgotten;172;412;19.52;29.94;219;365; 0.000062 ;584;25.88;;;;16.03;0.17;0.567625673;0.103387231;0.463507794;0.695131578
+DIVA_A9a7 Vergeten in agenda te schrijven/kijken; Forgets to keep or look at daily agenda;295;470;33.48;34.16;287;478; 0.533538 ;765;33.89;;;;0.39;0.02;0.97040883;0.091256383;0.811476109;1.160469529
+DIVA_A9a8 Vergeten afspraken na te komen; Forgets to do chores or run errands;239;292;27.13;21.22;199;332; 0.000333 ;531;23.53;;;;12.87;0.16;1.382004011;0.100443514;1.135037103;1.682707185
+;;;;;;;;;;;;;;;;;;;
+HI1: Fidgets;;;;;;;;;;;;;;;;;;;
+DIVA_HI_1a1 Moeite met stilzitten; Difficulty sitting still;558;782;63.34;56.83;502;838; 0.001616 ;1340;59.37;;;;9.94;0.09;1.312234249;0.08860228;1.103040822;1.561101538
+DIVA_HI_1a2 Met de benen wiebelen; Fidgets with the legs;542;703;61.52;51.09;467;778; 0.000010 ;1245;55.16;;;;19.52;0.13;1.530591607;0.087768048;1.288693557;1.817895848
+DIVA_HI_1a3 Met een pen tikken of met iets spelen; Tapping with a pen or playing with something;449;670;50.96;48.69;419;700; 0.066777 ;1119;49.58;;;;3.36;0.05;1.095197623;0.08631891;0.924732993;1.297085582
+DIVA_HI_1a4 Nagels bijten of in haren friemelen; Fiddling with hair or biting nails;288;603;32.69;43.82;334;557; 0.001497 ;891;39.48;;;;10.08;0.11;0.622586897;0.090058863;0.521843556;0.742779018
+DIVA_HI_1a5 Kan onrust beheersen, resulterend in spanning; Able to control restlessness, but feels stressed as a result;263;422;29.85;30.67;257;428; 0.618230 ;685;30.35;;;;0.25;0.02;0.962062302;0.094012183;0.8001629;1.156719303
+;;;;;;;;;;;;;;;;;;;
+HI2: Leaves seat;;;;;;;;;;;;;;;;;;;
+"DIVA_HI_2a1 Vaak opstaan van zijn/haar plek op kantoor of een 
+andere werkplek";Often leaves his/her place in the office or in the workplace;236;338;26.79;24.56;215;359; 0.071407 ;574;25.43;;;;3.25;0.08;1.123654878;0.09853754;0.926309449;1.363043728
+DIVA_HI_2a2 Symposia, lezingen, kerk etc. vermijden; Avoids symposiums, lectures, church etc.;82;172;9.31;12.50;95;159; 0.087549 ;254;11.25;;;;2.92;0.11;0.718397997;0.141743447;0.544140004;0.948461203
+DIVA_HI_2a3 Liever rondlopen dan zitten; Prefers to walk around rather than sit;394;559;44.72;40.63;357;596; 0.013566 ;953;42.22;;;;6.09;0.08;1.182435634;0.087202971;0.996664161;1.402833656
+DIVA_HI_2a4 Nooit lang stilzitten, altijd in beweging zijn; Never sits still for long, always moving around;340;483;38.59;35.10;308;515; 0.022863 ;823;36.46;;;;5.18;0.08;1.161946093;0.089329835;0.975319459;1.384283592
+DIVA_HI_2a5 Gespannen vanwege moeite om stil te zitten; Stressed owing to the difficulty of sitting still;288;430;32.69;31.25;269;449; 0.144059 ;718;31.81;;;;2.13;0.05;1.06846543;0.092418757;0.891439843;1.280645447
+DIVA_HI_2a6 Excuses verzinnen om te mogen lopen; Makes excuses in order to be able to walk around;228;382;25.88;27.76;229;381; 0.961173 ;610;27.03;;;;0.00;0.00;0.908541328;0.097679045;0.75023722;1.100248458
+;;;;;;0;;;;;;;;;;;;;
+HI3: Feels restless;;;;;;0;;;;;;;;;;;;;
+DIVA_HI_3a1 Zich innerlijk onrustig of gejaagd voelen; Feeling restless or agitated inside;625;1101;70.94;80.01;647;1079; 0.278908 ;1726;76.47;;;;1.17;0.03;0.609797201;0.100254071;0.501011204;0.742204213
+DIVA_HI_3a2 Steeds het gevoel hebben bezig te moeten zijn; Constantly having the feeling that you have to be doing something;550;990;62.43;71.95;577;963; 0.154048 ;1540;68.23;;;;2.03;0.04;0.647868412;0.091870041;0.541109861;0.775689948
+DIVA_HI_3a3 Zich moeilijk kunnen ontspannen; Finding it hard to relax;554;1002;62.88;72.82;583;973; 0.127872 ;1556;68.94;;;;2.32;0.04;0.632362187;0.092384841;0.52762617;0.757888744
+;;;;;;;;;;;;;;;;;;;
+HI4: Quiet leisure activities;;;;;;;;;;;;;;;;;;;
+DIVA_HI_4a1 Praten bij activiteiten waarbij dit niet gepast is;Talks during activities when this is not appropriate;181;352;20.54;25.58;200;333; 0.093763 ;533;23.62;;;;2.81;0.07;0.752207792;0.10378297;0.613756324;0.921891213
+DIVA_HI_4a2 In gezelschap snel haantje de voorste zijn; Becoming quickly too cocky in public;218;359;24.74;26.09;216;361; 0.878064 ;577;25.56;;;;0.02;0.01;0.931471281;0.099318936;0.766703568;1.131648246
+DIVA_HI_4a3 Luidruchtig zijn in allerlei situaties; Being loud in all kinds of situations;245;387;27.81;28.13;237;395; 0.501763 ;632;28.00;;;;0.45;0.03;0.984451433;0.09617204;0.815325455;1.188659837
+DIVA_HI_4a4 Activiteiten moeilijk rustig kunnen doen; Difficulty doing activities quietly;250;441;28.38;32.05;259;432; 0.482567 ;691;30.62;;;;0.49;0.03;0.840008481;0.094455696;0.698041687;1.010848294
+DIVA_HI_4a5 Moeite om zacht te praten; Difficultly in speaking softly;200;389;22.70;28.27;221;368; 0.077875 ;589;26.10;;;;3.11;0.07;0.745161546;0.10026113;0.612218486;0.906973152
+;;;;;;;;;;;;;;;;;;;
+HI5: On the go;;;;;;;;;;;;;;;;;;;
+DIVA_HI_5a1 Altijd maar bezig zijn; Always busy doing something;502;883;56.98;64.17;519;866; 0.345508 ;1385;61.36;;;;0.89;0.03;0.739521361;0.088269217;0.622034465;0.879198619
+"DIVA_HI_5a2 Moeite met lang stilzitten, of zich hier ongemakkelijk bij 
+voelen, bv. in restaurants of vergaderingen"; Is uncomfortable being still for extended time, e.g. in restaurants or meetings;307;486;34.85;35.32;297;496; 0.470213 ;793;35.14;;;;0.52;0.03;0.979445376;0.090447211;0.820332656;1.169419794
+DIVA_HI_5a3 Veel energie hebben, altijd maar doorgaan; Has too much energy, always on the move;356;583;40.41;42.37;352;587; 0.780491 ;939;41.60;;;;0.08;0.01;0.922349097;0.087692933;0.776693365;1.095320104
+"DIVA_HI_5a4 Anderen vinden u onrustig of vinden het moeilijk om u 
+bij te houden"; Others find you restless or difficult to keep up with;292;476;33.14;34.59;288;480; 0.753556 ;768;34.03;;;;0.10;0.01;0.93735287;0.091292945;0.783777857;1.121019681
+DIVA_HI_5a5 Over eigen grenzen gaan; Stepping over own boundaries;394;828;44.72;60.17;458;764; 0.000159 ;1222;54.14;;;;14.27;0.11;0.535448224;0.087315555;0.451224821;0.635392352
+DIVA_HI_5a6 Moeilijk los kunnen laten, doordraven/drammen; Finds it difficult to let things go, excessively driven;347;598;39.39;43.46;354;591; 0.632554 ;945;41.87;;;;0.23;0.02;0.84540854;0.087818514;0.711727919;1.004197785
+;;;;;;;;;;;;;;;;;;;
+HI6: Talks excessively;;;;;;;;;;;;;;;;;;;
+DIVA_HI_6a1  Zo druk praten dat mensen het vermoeiend vinden;So busy talking that other people find it tiring;250;454;28.38;32.99;264;440; 0.282392 ;704;31.19;;;;1.16;0.04;0.804610541;0.094191443;0.668972619;0.967749805
+DIVA_HI_6a2 Bekend staan als drukke prater; Known to be an incessant talker;323;645;36.66;46.88;363;605; 0.008332 ;968;42.89;;;;6.96;0.08;0.656033453;0.088354211;0.551718267;0.780071854
+DIVA_HI_6a3 Het moeilijk vinden om te stoppen met praten; Finds it difficult to stop talking;284;551;32.24;40.04;313;522; 0.038847 ;835;37.00;;;;4.27;0.07;0.712272798;0.090681706;0.596288635;0.850817052
+DIVA_HI_6a4 Neiging te veel te praten; Tendency to talk too much;361;692;40.98;50.29;395;658; 0.032504 ;1053;46.65;;;;4.57;0.07;0.68620498;0.087179327;0.578422695;0.81407123
+DIVA_HI_6a5 Anderen geen ruimte geven in een gesprek; Not giving others room to interject during a conversation;219;377;24.86;27.40;223;373; 0.713686 ;596;26.41;;;;0.13;0.02;0.876617757;0.098642308;0.722510621;1.06359501
+DIVA_HI_6a6 Veel woorden nodig hebben om iets te zeggen; Needing a lot of words to say something;281;525;31.90;38.15;302;504; 0.125975 ;806;35.71;;;;2.34;0.05;0.759146032;0.091133065;0.634967205;0.907610178
+;;;;;;;;;;;;;;;;;;;
+HI7: Blurts out answer;;;;;;;;;;;;;;;;;;;
+DIVA_HI_7a1 Een flapuit zijn, het hart op de tong hebben; Being a blabbermouth, saying what you think;375;721;42.57;52.40;411;685; 0.025903 ;1096;48.56;;;;4.96;0.07;0.67326616;0.086928887;0.567794817;0.798329446
+DIVA_HI_7a2 Dingen zeggen zonder na te denken; Saying things without thinking first;418;765;47.45;55.60;443;740; 0.128618 ;1183;52.41;;;;2.31;0.04;0.721066079;0.086579573;0.608523067;0.854423306
+DIVA_HI_7a3 Mensen antwoord geven voordat ze uitgepraat zijn; Giving people answers before they have finished speaking;478;761;54.26;55.31;464;775; 0.420807 ;1239;54.90;;;;0.65;0.02;0.958546773;0.086680543;0.808778024;1.136049558
+DIVA_HI_7a4 Zinnen van anderen afmaken; Completing other people’s sentences;373;616;42.34;44.77;371;618; 0.874860 ;989;43.82;;;;0.02;0.01;0.905895286;0.087112773;0.763705838;1.074558067
+DIVA_HI_7a5 Tactloos zijn; Being tactless;234;386;26.56;28.05;232;388; 0.889751 ;620;27.47;;;;0.02;0.01;0.92759728;0.097056035;0.766908766;1.121954466
+;;;;;;;;;;;;;;;;;;;
+HI8: Trouble waiting turn;;;;;;;;;;;;;;;;;;;
+DIVA_HI_8a1  Moeite met wachten in een rij, voordringen; Difficulty waiting in a queue, jumping the queue;336;563;38.14;40.92;337;562; 0.951794 ;899;39.83;;;;0.00;0.00;0.890276533;0.088415293;0.74862497;1.058730789
+DIVA_HI_8a2 Moeite in verkeer / file geduldig te blijven; Difficulty in patiently waiting in the traffic/traffic jams;363;557;41.20;40.48;345;575; 0.213777 ;920;40.76;;;;1.55;0.04;1.03039934;0.087759081;0.867568019;1.223791999
+DIVA_HI_8a3 Ongeduldig zijn; Being impatient;511;856;58.00;62.21;512;855; 0.944383 ;1367;60.57;;;;0.00;0.00;0.838974489;0.088039486;0.706005414;0.996986961
+DIVA_HI_8a4 Snel relaties/banen aangaan of verbreken uit ongeduld; Quickly starting relationships/jobs, or ending/leaving these because of impatience;108;221;12.26;16.06;123;206; 0.081712 ;329;14.58;;;;3.03;0.10;0.730186791;0.126268001;0.570101889;0.935223615
+;;;;;;;;;;;;;;;;;;;
+HI9: Interrupts;;;;;;;;;;;;;;;;;;;
+DIVA_HI_9a1 Zich snel bemoeien met anderen; Being quick to interfere with others;269;491;30.53;35.68;285;475; 0.236682 ;760;33.67;;;;1.40;0.04;0.792250709;0.09229335;0.661151444;0.949345556
+DIVA_HI_9a2 Anderen in de rede vallen; Intrudes on others;231;428;26.22;31.10;247;412; 0.199469 ;659;29.20;;;;1.65;0.05;0.787160316;0.096222486;0.651863941;0.950537872
+"DIVA_HI_9a3 Mensen ongevraagd storen in hun bezigheden, en hun 
+taken overnemen"; Disturbs other people’s activities without being asked, or takes over their tasks;209;381;23.72;27.69;221;369; 0.303921 ;590;26.14;;;;1.06;0.04;0.812222691;0.099511212;0.668296928;0.987144594
+DIVA_HI_9a4 Opmerkingen van anderen over bemoeizucht; Comments from others about interference;149;241;16.91;17.51;146;244; 0.765004 ;390;17.28;;;;0.09;0.02;0.958636601;0.114490019;0.765945968;1.199802819
+DIVA_HI_9a5 Moeite de grenzen van anderen te respecteren; Difficulty respecting the boundaries of others;126;195;14.30;14.17;120;201; 0.510027 ;321;14.22;;;;0.43;0.04;1.010738665;0.123434016;0.793541646;1.287383788
+DIVA_HI_9a6 Over alles een mening hebben en dit direct uiten; Having an opinion about everything and immediately expressing this;260;420;29.51;30.52;255;425; 0.681106 ;680;30.13;;;;0.17;0.02;0.952994402;0.094251988;0.792248522;1.146355349
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;
