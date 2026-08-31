@@ -1,14 +1,25 @@
 ![header_self_diagnostic_bias_llms](https://github.com/user-attachments/assets/70669ddf-6c5a-4be6-a7a3-93829434fee6)
 
 # Overview
-This repository contains the dataset and analysis outputs from [Elene Hansen & Kristensten-McLachlan (2026)]:
+
+This repository contains the data, model outputs, and analysis materials accompanying *Gender Associations in LLM-Mediated ADHD Self-Diagnosis*.
+
+## Code and Data Availability
+
+The repository contains the data and analysis code required to reproduce the reported summary statistics and figures. Experimental inputs and model outputs are provided under [`data/`](data/) and [`results/`](results/), while the corresponding analysis and visualization scripts are available under [`src/`](src/).
+
+Code used to generate the experimental data, including context construction and model querying, is not included in the public repository but is available from the authors upon request.
 
 ## Repo structure
 ```
 self_diagnostic_bias_llms/
-├── data/                        # Input data used throughout the pipeline
-│
-├── src/                         # scripts that either transform or analyse data inputs
+├── data/                        # Experimental inputs and reference data
+│   ├── context_lists/           # Final context sentences used in experiments
+│   ├── base_symptom_clauses/    # Base clauses used to construct context lists
+│   ├── platania_proxy_data.csv  # Extracted clinical reference data
+│   ├── platania_supplementary.xlsx
+│   └── README.md
+├── src/                         # Analysis and visualization scripts
 │
 ├── results/                     # Model outputs and derived evaluation results
 │   ├── responses/               # Raw model responses from the four experiments
@@ -34,32 +45,27 @@ self_diagnostic_bias_llms/
 ```
 *NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
 
-<div style="margin-top: 1.2em;"></div> <!-- 1.2em before notes, 2em before new headings -->
 
 # Technical Requirements
-The code was run using Python 4.4.2 on macOS 14.3. The project requires:
+The analyses were conducted using Python and R. Required Python dependencies are listed in [`requirements.txt`](requirements.txt).
 
 | Tool | Installation |
 |------|--------------|
-| [R 4.4.2](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/) + R Markdown | Install R separately via [CRAN](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/). R Markdown files can be run using [RStudio](https://docs.posit.co/previous-versions/rstudio.html#section-1) or another compatible IDE. |
-<div style="margin-top: 2em;"></div>
-<a name="usage"></a>
+| Python 3.12.2 | Install Python and the dependencies listed in [`requirements.txt`](requirements.txt). |
+| R 4.4.2 + R Markdown | Install R via [CRAN](https://cran.r-project.org/). R Markdown files can be run using [RStudio](https://posit.co/download/rstudio-desktop/) or another compatible environment. |
+
 
 # License
 
 Gender Associations in LLM-Mediated ADHD Self-Diagnosis © 2026 by Matilde Elene Hansen and Ross Deans Kristensen-McLachlan is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 
-# Citation 
-If you use our work, please cite: 
+# Citation
+If you use this work, please cite:
 
-```
-*Citation forthcoming*
-```
-<div style="margin-top: 1.2em;"></div>
+> Citation forthcoming.
 
-> Note: This paper has been accepted to the KONVENS 2026 workshop [EVAL4SD](https://eval4sd.github.io/) (*First Workshop on Evaluating LLMs for Specialized Domains (Eval4SD)*). (The final version, appearing in the ACL Anthology, is forthcoming.)
+The paper has been accepted to the KONVENS 2026 workshop [EVAL4SD](https://eval4sd.github.io/) (*First Workshop on Evaluating LLMs for Specialized Domains*). The final published version in the ACL Anthology is forthcoming.
 
-<div style="margin-top: 2.2em;"></div>
 
 # Acknowledgements
 This work was partially supported by the Danish National Research Foundation (Grant No.:
