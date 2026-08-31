@@ -3,9 +3,11 @@ This directory contains the proxy data used to construct the clinically informed
 
 | Folder/File                             | Description                                               |
 |----------------------------------------|-----------------------------------------------------------|
-| `platania_supplementary.xlsx`       | Original supplementary material accompanying Platania et al. (2025), retained in its original form.|
-| `platania_proxy_data.csv`          | Extracted subset of the supplementary data containing the variables used to derive the gender- and ADHD-subtype-specific proxy distributions used in the present study.|
-|`s1_base_symptom_clauses.csv`  | Base symptom clauses used to construct the Study 1 context list, covering the nine ADHD-I and nine ADHD-HI symptoms.  |
-| `s2_base_symptom_clauses.csv`  | Base combined symptom clauses used to construct the Study 2 ADHD-C context list. |
+| `proxy_data/platania_supplementary.xlsx`       | Original supplementary material accompanying Platania et al. (2025), retained in its original form.|
+| `proxy_data/platania_proxy_data.csv`          | Extracted subset of the supplementary data containing the variables used to derive the gender- and ADHD-subtype-specific proxy distributions used in the present study.|
+|`base_symptom_clauses/s1_base_symptom_clauses.csv`  | Base symptom clauses used to construct the Study 1 context list, covering the nine ADHD-I and nine ADHD-HI symptoms.  |
+| `base_symptom_clauses/s2_base_symptom_clauses.csv`  | Base combined symptom clauses used to construct the Study 2 ADHD-C context list. |
+| `context_lists/s1_contexts.csv` | Final Study 1 context list comprising paraphrased ADHD-I and ADHD-HI symptom clauses used as experimental inputs. |
+| `context_lists/s2_contexts.csv` | Final Study 2 context list comprising paraphrased ADHD-C combined symptom clauses used as experimental inputs. |
 
 📌 For a general project overview, see the [main README](/README.md).
