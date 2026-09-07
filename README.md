@@ -35,6 +35,8 @@ self_diagnostic_bias_llms/
 │   │   ├── s2_ex_responses.csv
 │   │   └── s2_im_responses.csv
 │   │
+│   ├── summaries/
+│   │
 │   └── metrics/                 # CAT-derived evaluation metrics
 │       ├── s1_ex_metrics.csv
 │       ├── s1_im_metrics.csv
