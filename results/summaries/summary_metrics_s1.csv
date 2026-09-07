@@ -1,0 +1,3 @@
+﻿Model;Test Version;Temperature;LMS (Total);LMS (Men);LMS (Women);BS (Total);BS (Men);BS (Women);MPS (Total);MPS (Men);MPS (Women);Total Rows;Valid Responses;Meaningful Responses;Proxy-Aligned Responses;;
+gpt-4o-2024-08-06;Explicit;0.7;89.72;68.47;87.59;76.47;0;100;42.22;32.22;41.22;360;360;323;247;;
+gpt-4o-2024-08-06;Implicit;0.7;90.91;83.57;83.09;49.13;0;100;89.33;82.12;81.65;4500;4500;4091;2010;;
