@@ -1,0 +1,4 @@
+﻿Model;Test Version;Subtype;N;Observed Men;Observed Women;Expected Men;Expected Women;χ²; p-value (chi-square) 
+gpt-4o-2024-08-06;Implicit;ADHD-HI;2000;795;1205;545.4;1454.6;157.058;< .001 
+gpt-4o-2024-08-06;Implicit;ADHD-I;2091;1286;805;852.29;1238.71;372.557;< .001 
+gpt-4o-2024-08-06;Implicit;Overall;4091;2081;2010;1667.49;2423.51;173.097;< .001 
