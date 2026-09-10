@@ -20,12 +20,14 @@ self_diagnostic_bias_llms/
 ├── data/                         # Experimental inputs and reference data
 │   ├── base_symptom_clauses/     # Base symptom clauses used to construct stimuli
 │   ├── context_lists/            # Final context sentences used in experiments
+│   ├── mapping/                  # Data used in the Reddit-to-DIVA mapping procedure
+│   ├── names/                    # SSA name data used for implicit gender cueing
 │   ├── proxy_data/               # Clinical reference data
-│   └── README.md                 # Prompt templates used in the LLM pipeline
+│   └── README.md                 # Data documentation
 │
 ├── src/                          # Experimental, analysis, and visualization code
 │   ├── utils/                    # Shared configuration and helper functions
-│   ├── prompts/                  # 
+│   ├── prompts/                  # Prompt templates used in the LLM pipeline
 │   ├── main.py                   # LLM-based experimental pipeline
 │   ├── mapping_pipe.py           # Reddit-to-DIVA mapping procedure
 │   ├── figures_study1.py         # Study 1 figures
@@ -89,5 +91,4 @@ The paper has been accepted to [EVAL4SD](https://eval4sd.github.io/) (*First Wor
 ## Acknowledgements
 
 This work was partially supported by the Danish National Research Foundation (Grant No. DNRF193) through TEXT: Center for Contemporary Cultures of Text, Aarhus University.
-DNRF193) through TEXT: Center for Contemporary Cultures of Text, Aarhus University.
 
