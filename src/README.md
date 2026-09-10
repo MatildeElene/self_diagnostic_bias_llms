@@ -10,7 +10,8 @@ This directory contains the data-processing, experimental, analysis, and visuali
 | `figures_study2.py` | Generates figures for Study 2 from the experimental results. |
 | `plots_LLM_rstudio.Rmd` | R Markdown script used to generate tables and additional visualizations from the analysis outputs. |
 | `simple_stats.py` | Computes descriptive statistics and summary measures from the experimental results. |
-| `utils/` | Contains shared configuration, API-client setup, and plotting utilities. |
+| `utils/` | Contains shared configuration, API-client setup, and plotting utilities.
+| `prompts/` | Contains the prompt templates used for DIVA-5 mapping, symptom paraphrasing, and the explicit and implicit CAT experiments. ||
 
 ## Utilities
 
