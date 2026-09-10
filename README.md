@@ -21,10 +21,11 @@ self_diagnostic_bias_llms/
 │   ├── base_symptom_clauses/     # Base symptom clauses used to construct stimuli
 │   ├── context_lists/            # Final context sentences used in experiments
 │   ├── proxy_data/               # Clinical reference data
-│   └── README.md
+│   └── README.md                 # Prompt templates used in the LLM pipeline
 │
 ├── src/                          # Experimental, analysis, and visualization code
 │   ├── utils/                    # Shared configuration and helper functions
+│   ├── prompts/                  # 
 │   ├── main.py                   # LLM-based experimental pipeline
 │   ├── mapping_pipe.py           # Reddit-to-DIVA mapping procedure
 │   ├── figures_study1.py         # Study 1 figures
