@@ -13,43 +13,46 @@ Code used to generate the experimental data, including context construction and 
 ## Repo structure
 ```
 self_diagnostic_bias_llms/
-├── data/                        # Experimental inputs and reference data
-│   ├── context_lists/           # Final context sentences used in experiments
-│   ├── base_symptom_clauses/    # Base clauses used to construct context lists
-│   ├── platania_proxy_data.csv  # Extracted clinical reference data
-│   ├── platania_supplementary.xlsx
+├── data/                         # Experimental inputs and reference data
+│   ├── base_symptom_clauses/     # Base symptom clauses used to construct stimuli
+│   ├── context_lists/            # Final context sentences used in experiments
+│   ├── proxy_data/               # Clinical reference data
 │   └── README.md
 │
-├── src/                         # Analysis and visualization scripts
-│   ├── utils/                   # Reusable analysis helper functions
-│   ├── figures_study1.py        # Generates Study 1 figures
-│   ├── figures_study2.py        # Generates Study 2 figures
-│   ├── plots_LLM_rstudio.Rmd    # R Markdown visualization script
-│   ├── simple_stats.py          # Descriptive statistics and summaries
+├── src/                          # Experimental, analysis, and visualization code
+│   ├── utils/                    # Shared configuration and helper functions
+│   ├── main.py                   # LLM-based experimental pipeline
+│   ├── mapping_pipe.py           # Reddit-to-DIVA mapping procedure
+│   ├── figures_study1.py         # Study 1 figures
+│   ├── figures_study2.py         # Study 2 figures
+│   ├── plots_LLM_rstudio.Rmd     # R Markdown tables and visualizations
+│   ├── simple_stats.py           # Descriptive statistics and summaries
 │   └── README.md
 │
-├── results/                     # Model outputs and derived evaluation results
-│   ├── responses/               # Raw model responses from the four experiments
+├── results/                      # Model outputs and derived evaluation results
+│   ├── responses/                # Raw model responses
 │   │   ├── s1_ex_responses.csv
 │   │   ├── s1_im_responses.csv
 │   │   ├── s2_ex_responses.csv
 │   │   └── s2_im_responses.csv
 │   │
-│   ├── summaries/
+│   ├── metrics/                  # CAT-derived evaluation metrics
+│   │   ├── s1_ex_metrics.csv
+│   │   ├── s1_im_metrics.csv
+│   │   ├── s2_ex_metrics.csv
+│   │   └── s2_im_metrics.csv
 │   │
-│   └── metrics/                 # CAT-derived evaluation metrics
-│       ├── s1_ex_metrics.csv
-│       ├── s1_im_metrics.csv
-│       ├── s2_ex_metrics.csv
-│       └── s2_im_metrics.csv
+│   ├── summaries/                # Analysis summaries used for tables and figures
+│   └── README.md
 │
-├── out/                         # Generated analysis outputs
-│   ├── plots/                   # Figures and visualizations (.png)
-│   └── reports/                 # Statistical and evaluation reports (.txt, .csv)
+├── out/                          # Generated outputs
+│   ├── figures/                  # Figures and visualizations
+│   ├── tables/                   # Generated tables
+│   └── README.md
 │
-├── requirements.txt             # Python package dependencies
-├── LICENSE                      # Repository license
-└── README.md                    # Project documentation
+├── requirements.txt              # Python package dependencies
+├── LICENSE                       # Repository license
+└── README.md                     # Project documentation
 ```
 *NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
 
