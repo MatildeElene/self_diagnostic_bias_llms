@@ -1,15 +1,22 @@
 # main.py
-import os, json, time, re
-import pandas as pd
+import os
+import json
+import time
+import re
 
-# LLM
+import pandas as pd
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv("OPENAI_API_KEY.env")
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-# config
 from config import MODELS
-MODEL_CFG = MODELS["mini"]   # use "mini" for dev; switch to "prod" for final
 
+
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise RuntimeError("OPENAI_API_KEY not found.")
+
+client = OpenAI(api_key=api_key)
+
+MODEL_CFG = MODELS["mini"]  # "mini" for development, "prod" for final
