@@ -2,15 +2,19 @@
 
 # Overview
 
-This repository contains the data, model outputs, and analysis materials accompanying *Gender Associations in LLM-Mediated ADHD Self-Diagnosis*.
+This repository contains the data, experimental code, model outputs, and analysis materials accompanying *Gender Associations in LLM-Mediated ADHD Self-Diagnosis*.
+
+The study evaluates gender associations in LLM-mediated ADHD self-diagnosis using an adapted Context Association Test (CAT) under explicit and implicit gender cueing.
 
 ## Code and Data Availability
 
-The repository contains the data and analysis code required to reproduce the reported summary statistics and figures. Experimental inputs and model outputs are provided under [`data/`](data/) and [`results/`](results/), while the corresponding analysis and visualization scripts are available under [`src/`](src/).
+The repository contains the experimental inputs, model outputs, analysis code, and visualization materials used in the study.
 
-Code used to generate the experimental data, including context construction and model querying, is not included in the public repository but is available from the authors upon request.
+Experimental inputs and reference data are provided under [`data/`](data/), model responses and derived evaluation results under [`results/`](results/), and the corresponding experimental, analysis, and visualization code under [`src/`](src/). Generated figures and tables are available under [`out/`](out/).
 
-## Repo structure
+API credentials are not included. Scripts requiring access to the OpenAI API expect an `OPENAI_API_KEY` to be supplied through a local environment file or environment variable.
+
+## Repository Structure
 ```
 self_diagnostic_bias_llms/
 ├── data/                         # Experimental inputs and reference data
@@ -54,31 +58,38 @@ self_diagnostic_bias_llms/
 ├── LICENSE                       # Repository license
 └── README.md                     # Project documentation
 ```
-*NOTE: s1/s2 = Study 1/2; ex = explicit cueing; im = implicit cueing.
+**Abbreviations:** `s1`/`s2` = Study 1/Study 2; `ex` = explicit cueing; `im` = implicit cueing.
 
+## Technical Requirements
 
-# Technical Requirements
 The analyses were conducted using Python and R. Required Python dependencies are listed in [`requirements.txt`](requirements.txt).
 
 | Tool | Installation |
-|------|--------------|
+
+|---|---|
+
 | Python 3.12.2 | Install Python and the dependencies listed in [`requirements.txt`](requirements.txt). |
+
 | R 4.4.2 + R Markdown | Install R via [CRAN](https://cran.r-project.org/). R Markdown files can be run using [RStudio](https://posit.co/download/rstudio-desktop/) or another compatible environment. |
 
+For scripts that query the OpenAI API, set the `OPENAI_API_KEY` environment variable before running the experimental pipeline.
 
-# License
+## License
 
-Gender Associations in LLM-Mediated ADHD Self-Diagnosis © 2026 by Matilde Elene Hansen and Ross Deans Kristensen-McLachlan is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+*Gender Associations in LLM-Mediated ADHD Self-Diagnosis* © 2026 Matilde Elene Hansen and Ross Deans Kristensen-McLachlan.
 
-# Citation
+This work is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+## Citation
+
 If you use this work, please cite:
 
 > Citation forthcoming.
 
-The paper has been accepted to the KONVENS 2026 workshop [EVAL4SD](https://eval4sd.github.io/) (*First Workshop on Evaluating LLMs for Specialized Domains*). The final published version in the ACL Anthology is forthcoming.
+The paper has been accepted to [EVAL4SD](https://eval4sd.github.io/) (*First Workshop on Evaluating LLMs for Specialized Domains*), co-located with KONVENS 2026. The final published version in the ACL Anthology is forthcoming.
 
+## Acknowledgements
 
-# Acknowledgements
-This work was partially supported by the Danish National Research Foundation (Grant No.:
+This work was partially supported by the Danish National Research Foundation (Grant No. DNRF193) through TEXT: Center for Contemporary Cultures of Text, Aarhus University.
 DNRF193) through TEXT: Center for Contemporary Cultures of Text, Aarhus University.
 
