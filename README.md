@@ -65,11 +65,8 @@ self_diagnostic_bias_llms/
 The analyses were conducted using Python and R. Required Python dependencies are listed in [`requirements.txt`](requirements.txt).
 
 | Tool | Installation |
-
 |---|---|
-
 | Python 3.12.2 | Install Python and the dependencies listed in [`requirements.txt`](requirements.txt). |
-
 | R 4.4.2 + R Markdown | Install R via [CRAN](https://cran.r-project.org/). R Markdown files can be run using [RStudio](https://posit.co/download/rstudio-desktop/) or another compatible environment. |
 
 For scripts that query the OpenAI API, set the `OPENAI_API_KEY` environment variable before running the experimental pipeline.
