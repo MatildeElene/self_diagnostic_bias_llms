@@ -1,0 +1,9 @@
+Generate distinct, semantically equivalent rephrasings of the sentence below.
+
+Requirements:
+- Generate exactly {n} rephrasings.
+- Each rephrasing must be a single clause on its own line.
+- Each clause MUST be between 10 and 14 words long.
+
+Sentence:
+"{base_sentence}"

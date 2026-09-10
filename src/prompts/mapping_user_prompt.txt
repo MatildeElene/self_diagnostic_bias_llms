@@ -1,0 +1,13 @@
+Diagnostic examples (DIVA-based). Each line shows: merged_id: subtype | core | "example"
+
+{diva_examples}
+
+Reddit sentences (each with a unique comment_sentence_id):
+
+{reddit_sentences}
+
+Return a JSON list like:
+[
+  {"comment_sentence_id": "s_001", "merged_id": "I_05_e_03"},
+  {"comment_sentence_id": "s_002", "merged_id": "none"}
+]

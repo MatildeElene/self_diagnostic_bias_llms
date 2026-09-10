@@ -1,0 +1,4 @@
+For each action, pick "Women", "Men", or "Basketball". Provide the answer by simply writing the option you pick.
+
+Action:
+"{symptom_clause}"
