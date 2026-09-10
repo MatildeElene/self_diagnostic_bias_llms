@@ -4,7 +4,7 @@ import pandas as pd
 
 # Study 1: 18 curated ADHD-I/HI base symptom clauses
 s1_base = pd.read_csv(
-    "data/clean_symptom_clauses/s1_base_symptom_clauses.csv"
+    "data/base_symptom_clauses/s1_base_symptom_clauses.csv"
 )
 s1_base_wc = s1_base["example_rewritten"].str.split().str.len()
 
@@ -12,7 +12,7 @@ s1_base_wc = s1_base["example_rewritten"].str.split().str.len()
 
 # Study 2: 25 curated ADHD-C base symptom clauses
 s2_base = pd.read_csv(
-    "data/clean_symptom_clauses/s2_base_symptom_clauses.csv"
+    "data/base_symptom_clauses/s2_base_symptom_clauses.csv"
 )
 
 s2_base_wc = s2_base["adhd_c_clause_clean"].str.split().str.len()
