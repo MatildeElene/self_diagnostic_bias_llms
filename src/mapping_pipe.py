@@ -8,9 +8,8 @@ from openai import OpenAI
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
-INPUT_PATH = PROJECT_ROOT / "data" / "processed" / "symptom_clause_variations.csv"
-OUTPUT_PATH = PROJECT_ROOT / "results" / "responses" / "s1_explicit_responses.csv"
+INPUT_PATH = PROJECT_ROOT / "data" / "base_symptom_clauses" / 
+OUTPUT_PATH = PROJECT_ROOT / "results" / "responses" / "s1_ex_responses.csv"
 
 MODEL_NAME = "gpt-4o-mini-2024-07-18"
 TEST_VERSION = "explicit_test"
